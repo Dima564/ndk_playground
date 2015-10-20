@@ -1,4 +1,5 @@
 test:
   override:
+    - $ANDROID_NDK/ndk-build
     - ./gradlew assembleDebug
     - cp -r project-name/build/outputs $CIRCLE_ARTIFACTS
